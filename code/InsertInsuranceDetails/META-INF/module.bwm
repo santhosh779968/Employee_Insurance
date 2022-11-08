@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_8qtzkF8jEe2gRsJeCfkB0A" targetNamespace="http://tns.tibco.com/bw/composite/InsertInsuranceDetails" name="InsertInsuranceDetails" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_ITP88F8kEe2gRsJeCfkB0A" name="InsertInsuranceDetails" promote="ComponentProcess/InsertInsuranceDetails">
+    <sca:interface.wsdl xmi:id="_ITZt8F8kEe2gRsJeCfkB0A" interface="http://xmlns.example.com/20221108104233PLT#wsdl.interface(InsertInsuranceDetails)" scaext:wsdlLocation="../Processes/insertinsurancedetails/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_ITje8F8kEe2gRsJeCfkB0A" name="RestService" path="/InsertInsuranceDetails" docBasePath="http://localhost:7777/InsertInsuranceDetails" docResourcePath="Resource" basePath="/" connector="insertinsurancedetails.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/insertinsurancedetails.Process-Resource.json">
+      <operation xmi:id="_ITso4F8kEe2gRsJeCfkB0A" operationName="post" nickname="post-InsertInsuranceDetails" httpMethod="POST" notes="postResource" responseStyle="element" requestStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>xml</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_IUcPw18kEe2gRsJeCfkB0A"/>
+      <advancedConfig xmi:id="_ITje8V8kEe2gRsJeCfkB0A" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ITso4V8kEe2gRsJeCfkB0A" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_9iaQkF8jEe2gRsJeCfkB0A" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9ikBkF8jEe2gRsJeCfkB0A" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9ikBkV8jEe2gRsJeCfkB0A" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9itLgF8jEe2gRsJeCfkB0A" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9itLgV8jEe2gRsJeCfkB0A" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9i28gF8jEe2gRsJeCfkB0A" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9jAGcF8jEe2gRsJeCfkB0A" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9jAGcV8jEe2gRsJeCfkB0A" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_9jJ3cF8jEe2gRsJeCfkB0A" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_9S3YsF8jEe2gRsJeCfkB0A" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_9S3YsV8jEe2gRsJeCfkB0A" processName="insertinsurancedetails.Process"/>
+    <sca:service xmi:id="_ITGzAF8kEe2gRsJeCfkB0A" name="InsertInsuranceDetails">
+      <sca:interface.wsdl xmi:id="_ITGzAV8kEe2gRsJeCfkB0A" interface="http://xmlns.example.com/20221108104233PLT#wsdl.interface(InsertInsuranceDetails)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
