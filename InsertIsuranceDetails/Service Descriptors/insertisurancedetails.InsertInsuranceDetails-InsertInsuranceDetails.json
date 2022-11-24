@@ -1,0 +1,53 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "InsertInsuranceDetails",
+    "description" : "InsertInsuranceDetails service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/insertinsurancedetails" : {
+      "post" : {
+        "summary" : "postInsertInsuranceDetails",
+        "description" : "postInsertInsuranceDetails",
+        "operationId" : "post-insertinsurancedetails",
+        "consumes" : [ "application/xml" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Resposnse_Msg"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Resposnse_Msg to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Resposnse_Msg"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Resposnse_Msg" : {
+      "type" : "object",
+      "required" : [ "Response" ],
+      "properties" : {
+        "Response" : {
+          "type" : "string"
+        },
+        "Correlation_ID" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
