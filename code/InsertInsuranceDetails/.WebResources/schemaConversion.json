@@ -1,5 +1,0 @@
-{"records": [{
-    "jsonSchemaLocation": "/InsertInsuranceDetails/Service Descriptors/insertinsurancedetails.Process-Resource.json",
-    "conversionType": "linked",
-    "xsdSchemaTargetNamespace": "http://www.example.org/Insert_Employee_Data"
-}]}
